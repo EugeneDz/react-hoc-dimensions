@@ -13,12 +13,12 @@ npm i --save react-hoc-dimensions
 
 ```js
 import React from 'react';
-import Dimensions from 'react-hoc-dimensions';
+import windowDimensions from 'react-hoc-dimensions';
 
-class App extends Component {
+class Page extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="page">
         {this.props.windowWidth < 575
           ? <div> Mobile content </div>
           : <div> Tablet or desktop content </div>
@@ -28,7 +28,7 @@ class App extends Component {
   }
 }
 
-export default Dimensions()(App);
+export default windowDimensions(Page);
 ```
 
 # Contributing
