@@ -1,0 +1,39 @@
+{
+  "name": "react-hoc-dimensions",
+  "version": "1.0.0",
+  "description": "React [higher-order component](https://reactjs.org/docs/higher-order-components.html) to get dimensions of container",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "scripts": {
+    "prepublish": "babel src --out-dir dist",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneDz/react-hoc-dimensions.git"
+  },
+  "keywords": [
+    "react",
+    "dimensions",
+    "width"
+  ],
+  "author": "Eugene Dzhevadov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EugeneDz/react-hoc-dimensions/issues"
+  },
+  "homepage": "https://github.com/EugeneDz/react-hoc-dimensions#readme"
+}
