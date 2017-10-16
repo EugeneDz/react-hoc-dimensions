@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default () => Component => class Dimensions extends React.Component {
-    static displayName = 'Dimensions';
+export default () => WrappedComponent => class Dimensions extends Component {
+    static displayName = 'windowDimensions';
+
     constructor(props) {
       super(props);
 
@@ -27,7 +28,12 @@ export default () => Component => class Dimensions extends React.Component {
     }
 
     render() {
-      return <Component {...this.state} />;
+      return (
+        <WrappedComponent
+          windowWidth={this.state.width}
+          windowHeight={this.state.height}
+        />
+      );
     }
 };
 
