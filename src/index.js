@@ -1,3 +1,3 @@
-import Dimensions from './Dimensions';
+import windowDimensions from './windowDimensions';
 
-export default Dimensions;
+export default windowDimensions;

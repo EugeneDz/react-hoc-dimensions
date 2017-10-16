@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default () => WrappedComponent => class Dimensions extends Component {
-    static displayName = 'windowDimensions';
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+}
 
+function windowDimensions(WrappedComponent) {
+  class WindowDimensions extends React.Component {
     constructor(props) {
       super(props);
 
@@ -35,5 +38,12 @@ export default () => WrappedComponent => class Dimensions extends Component {
         />
       );
     }
-};
+  }
+
+  WindowDimensions.displayName = `WindowDimensions(${getDisplayName(WrappedComponent)})`;
+
+  return WindowDimensions;
+}
+
+export default windowDimensions;
 

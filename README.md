@@ -1,6 +1,6 @@
 # react-hoc-dimensions
 
-A [higher order component](https://reactjs.org/docs/higher-order-components.html) that can be used to passing the window dimensions into your component as props.
+A [higher-order component](https://reactjs.org/docs/higher-order-components.html) that can be used to passing the window dimensions into your component as props.
 
 
 # Installation
