@@ -38,8 +38,3 @@ Pull requests are welcome. You can check that your changes correspond to the cod
 ```
 npm run lint
 ```
-
-If you're submitting a bugfix, a test to document (and prevent) the issue is welcome.
-
-[eslint]: http://eslint.org/
-[airbnb-base]: https://www.npmjs.com/package/eslint-config-airbnb-base
