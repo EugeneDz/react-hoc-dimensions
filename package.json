@@ -1,6 +1,6 @@
 {
   "name": "react-hoc-dimensions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React [higher-order component](https://reactjs.org/docs/higher-order-components.html) to get dimensions of container",
   "main": "./dist/index.js",
   "dependencies": {
